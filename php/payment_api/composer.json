@@ -1,0 +1,13 @@
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/xendit/xendit-php.git"
+    }
+  ],
+  "require": {
+    "xendit/xendit-php": "4.1.0",
+    "xendit/xendit-php-clients": "^4.1",
+    "phpmailer/phpmailer": "^6.9"
+  }
+}

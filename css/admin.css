@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/** Menu Control */
+.menu-control {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Menu control identitas */
+.menu-control .identitas {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  width: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-control .identitas .img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.menu-control .identitas .username-penjual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu-control .identitas .username-penjual h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-control .identitas .username-penjual h6 {
+  margin-top: -0.2rem;
+  font-style: italic;
+}
+
+/* Menu Control Feature */
+.menu-control .feature {
+  margin-left: -2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-control .feature ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.menu-control .feature ul li {
+  margin-left: 5rem;
+}
+
+/** View Site */
+.view-site {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: "Poppins", sans-serif;
+}
+.view-site a.link-akun-penjual {
+  color: black;
+}
+
+/* Card content */
+.view-site .card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.view-site .card h5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.view-site .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+.view-site .card .card-title,
+.view-site .card .card-text {
+  margin-top: -10px;
+}
+.view-site .card .card-penjual {
+  font-size: 0.9rem;
+}
+.view-site .card .btn-success,
+.view-site .card .btn-primary {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/** Verifikais OTP */
+.container-registrasi {
+  margin: 10vh auto;
+  width: 25rem;
+  height: fit-content;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  padding-bottom: 1rem;
+}
+
+/*? Start Area Tablet */
+@media screen and (max-width: 992px) {
+  .menu-control .feature {
+    margin-left: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-control .feature ul li {
+    margin-left: 2rem;
+  }
+}
+
+/* Menu control Identitas */
+.menu-control .identitas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*? End Area Tablet  */
+
+/*? Start Area Mobile */
+@media screen and (max-width: 576px) {
+  /** Menu Control */
+  .menu-control {
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Menu control Identitas */
+  .menu-control .identitas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .menu-control .identitas .img img {
+    margin: 0 auto;
+  }
+
+  /* Menu Control Feature */
+  .menu-control .feature {
+    margin-left: 4rem;
+    display: flex;
+  }
+  .menu-control .feature ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .menu-control .feature ul li {
+    margin-left: -3rem;
+    margin-top: 0.5rem;
+  }
+
+  .menu-control .feature ul li button {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.75rem;
+  }
+
+  /** View Site */
+  /* card content */
+  .view-site .card .card-title {
+    margin-top: -10px;
+    font-size: 1.2rem;
+  }
+  .view-site .card .card-text {
+    margin-top: -10px;
+    font-size: 0.9rem;
+  }
+  /* .view-site .card .card-body {
+    font-size: small;
+  }
+  .view-site .card .card-body h5 {
+    font-size: small;
+  }
+  .view-site .card .card-body a {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.75rem;
+  }
+  .view-site .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+  } */
+}
+
+/*? End Area Mobile  */

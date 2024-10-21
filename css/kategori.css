@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+.container .judul {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container .kembali {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.container .kembali:hover {
+  color: rgba(0, 0, 0, 0.600);
+}
+

@@ -1,0 +1,45 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  padding-top: 4rem;
+}
+@font-face {
+  font-family: "Batik Ganasan";
+  src: url("../img/Batik\ Ganasan.ttf") format("truetype");
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: black;
+}
+
+.navbar-brand {
+  font-family: "Batik Ganasan";
+  color: black;
+}
+
+.navbar-brand span {
+  font-family: "Batik Ganasan";
+  color: #bda310;
+}
+
+.cart a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-left: -8rem;
+}
+
+/* tbale mode */
+@media screen and (max-width: 992px) {
+  .cart a {
+    margin-left: -11rem;
+  }
+}
+/* Mobile Mode */
+@media screen and (max-width: 576px) {
+  .cart a {
+    margin-left: -7rem;
+  }
+}

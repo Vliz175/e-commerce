@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+.container {
+  /* border: 1px solid black; */
+  font-family: "Poppins", sans-serif;
+}
+
+.bar-pesanan {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.bar-pesanan .img {
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid black; */
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.bar-pesanan .img img {
+  width: 300px;
+}
+.bar-pesanan .total-pesanan {
+  margin-left: 3rem;
+}
+
+/** Tablet Area */
+@media screen and (max-width: 992px) {
+  .bar-pesanan .img img {
+    width: 200px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+}
+/** EndTablet Area */
+
+/** Mobile Area */
+@media screen and (max-width: 576px) {
+  .bar-pesanan .img img {
+    width: 150px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+}
+/** End Mobile Area */

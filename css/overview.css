@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.container-content a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.container-content a:hover {
+color: rgba(0, 0, 0, 0.600);
+}
+
+.img {
+  width: 100%;
+  max-height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.form-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+.form-control {
+width: 120px;
+text-align: center;
+}
+
+.container-content {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-content .deskripsi h1,
+.container-content .deskripsi h2,
+.container-content .deskripsi p {
+  font-family: "Poppins", sans-serif;
+}
+.container-content .deskripsi .penjual {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+}
+.container-content .deskripsi .penjual .identitas {
+  margin-left: 1rem;
+}
+.container-content .deskripsi .penjual .identitas h1 {
+  font-size: 1.5rem;
+}
+.container-content .deskripsi .img {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100%;
+}
+.container-content .deskripsi .img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Style buat customer-buttton */
+.customer-button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.customer-button .wa {
+  flex-grow: 1;
+}
+.customer-button .beli {
+  flex-grow: 10;
+  margin-left: 0.3rem;
+}
+.customer-button .cart {
+  flex-grow: 1;
+  margin-left: 0.3rem;
+}
+
+/* *Start Tablet Area */
+@media screen and (max-width: 992px) {
+  .img {
+    max-width: 100%;
+  }
+
+  .container-content {
+    max-width: 70%;
+  }
+}
+/* *End Tablet Area */
+
+/* *Start Mobile Area */
+@media screen and (max-width: 576px) {
+.img {
+  max-height: 300px;
+}
+
+
+  .container-content {
+    max-width: 90%;
+  }
+}
+/* *End Mobile Area */
